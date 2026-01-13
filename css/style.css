@@ -1,0 +1,180 @@
+/* ===============================
+   CSS VARIABLES
+================================ */
+:root {
+    --primary: #1e1e6f;
+    --primary-tint: #3a3aa3;
+    --primary-shade: #14144a;
+  
+    --dark: #1c1c1c;
+    --light: #ffffff;
+  
+    --muted: #e5e5e5;
+    --muted-tint: #f2f2f2;
+    --muted-shade: #cccccc;
+  
+    --font-normal: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, serif;
+  
+    --space-0: 0;
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 2rem;
+  }
+  
+  /* ===============================
+     RESET
+  ================================ */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-normal);
+    background-color: var(--muted-tint);
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--space-1);
+  }
+  
+  p {
+    margin-bottom: var(--space-1);
+  }
+  
+  /* ===============================
+     LINKS & BUTTONS
+  ================================ */
+  a {
+    text-decoration: none;
+  }
+  
+  .link {
+    margin-left: var(--space-1);
+  }
+  
+  .btn {
+    display: inline-block;
+    border: none;
+    border-radius: 1rem;
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-tint);
+  }
+  
+  /* ===============================
+     COLOURS
+  ================================ */
+  .bg-primary { background-color: var(--primary); }
+  .bg-dark { background-color: var(--dark); }
+  .bg-light { background-color: var(--light); }
+  .bg-muted { background-color: var(--muted); }
+  
+  .text-light { color: var(--light); }
+  .text-dark { color: var(--dark); }
+  
+  /* ===============================
+     LAYOUT
+  ================================ */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .d-grid {
+    display: grid;
+  }
+  
+  .grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* ===============================
+     SPACING
+  ================================ */
+  .p-1 { padding: var(--space-1); }
+  .p-2 { padding: var(--space-2); }
+  .p-3 { padding: var(--space-3); }
+  
+  .m-1 { margin: var(--space-1); }
+  .m-2 { margin: var(--space-2); }
+  .m-3 { margin: var(--space-3); }
+  
+  .gap-2 { gap: var(--space-2); }
+  
+  /* ===============================
+     HOME PAGE
+  ================================ */
+  .hero-box {
+    width: 100%;
+    height: 250px;
+    background-color: var(--muted-shade);
+  }
+  
+  /* quick link boxes */
+  .box-image {
+    width: 100%;
+    height: 120px;
+    background-color: var(--muted);
+    margin-bottom: var(--space-1);
+  }
+  
+  /* ===============================
+     FORMS (CONTACT PAGE)
+  ================================ */
+  form {
+    display: grid;
+    gap: var(--space-1);
+  }
+  
+  input, textarea {
+    padding: var(--space-1);
+    border: 1px solid var(--muted-shade);
+  }
+  
+  /* ===============================
+     FOOTER
+  ================================ */
+  footer {
+    margin-top: var(--space-3);
+    text-align: center;
+  }
+  
+  /* ===============================
+     MOBILE
+  ================================ */
+  @media (max-width: 600px) {
+    .grid-3col {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-2col {
+      grid-template-columns: 1fr;
+    }
+  }
+  
