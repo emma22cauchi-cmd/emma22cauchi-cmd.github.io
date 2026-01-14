@@ -1,6 +1,5 @@
-/* ===============================
-   CSS VARIABLES
-================================ */
+
+ /*------------------------- CSS VARIABLES  ---------------------------*/
 :root {
     --primary: #1e1e6f;
     --primary-tint: #3a3aa3;
@@ -22,9 +21,8 @@
     --space-3: 2rem;
   }
   
-  /* ===============================
-     RESET
-  ================================ */
+   /*------------------------- RESET ---------------------------*/
+  
   * {
     box-sizing: border-box;
     margin: 0;
@@ -46,9 +44,7 @@
     margin-bottom: var(--space-1);
   }
   
-  /* ===============================
-     LINKS & BUTTONS
-  ================================ */
+  /*-------------------------  LINKS & BUTTONS ---------------------------*/
   a {
     text-decoration: none;
   }
@@ -74,9 +70,8 @@
     background-color: var(--primary-tint);
   }
   
-  /* ===============================
-     COLOURS
-  ================================ */
+    /*------------------------- COLOURS ---------------------------*/
+
   .bg-primary { background-color: var(--primary); }
   .bg-dark { background-color: var(--dark); }
   .bg-light { background-color: var(--light); }
@@ -85,9 +80,7 @@
   .text-light { color: var(--light); }
   .text-dark { color: var(--dark); }
   
-  /* ===============================
-     LAYOUT
-  ================================ */
+   /*-------------------------  LAYOUT ---------------------------*/
   .container {
     max-width: 1200px;
     margin: auto;
@@ -114,9 +107,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
-  /* ===============================
-     SPACING
-  ================================ */
+   /*------------------------- HOME PAGE ---------------------------*/
+
   .p-1 { padding: var(--space-1); }
   .p-2 { padding: var(--space-2); }
   .p-3 { padding: var(--space-3); }
@@ -127,9 +119,8 @@
   
   .gap-2 { gap: var(--space-2); }
   
-  /* ===============================
-     HOME PAGE
-  ================================ */
+
+    /*-------------------------  HOME PAGE---------------------------*/
   .hero-box {
     width: 100%;
     height: 250px;
@@ -144,9 +135,9 @@
     margin-bottom: var(--space-1);
   }
   
-  /* ===============================
-     FORMS (CONTACT PAGE)
-  ================================ */
+
+    /*-------------------------   FORMS (CONTACT PAGE)---------------------------*/
+
   form {
     display: grid;
     gap: var(--space-1);
@@ -157,17 +148,15 @@
     border: 1px solid var(--muted-shade);
   }
   
-  /* ===============================
-     FOOTER
-  ================================ */
+ 
+    /*-------------------------  FOOTER ---------------------------*/
   footer {
     margin-top: var(--space-3);
     text-align: center;
   }
   
-  /* ===============================
-     MOBILE
-  ================================ */
+       /*-------------------------   MOBILE  ---------------------------*/
+
   @media (max-width: 600px) {
     .grid-3col {
       grid-template-columns: 1fr;
@@ -177,4 +166,23 @@
       grid-template-columns: 1fr;
     }
   }
+
+
+  /*-------------------------   COURSES PAGE ---------------------------*/
+     
+    .courses-grid div {
+      box-shadow: 2px 4px rgba(0,0,0,0.1) ;
+     }
+
+     .courses-grid h3 {
+      margin-top: var(--space-1);
+    }
+
+    .courses-grid p {
+      font-size: 0.9rem;
+    }
   
+    .courses-grid div:hover {
+      background-color: var(--muted-tint);
+    }
+    
