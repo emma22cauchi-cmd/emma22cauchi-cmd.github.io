@@ -185,4 +185,24 @@
     .courses-grid div:hover {
       background-color: var(--muted-tint);
     }
+
+     /*-------------------------   APPLY PAGE ---------------------------*/
+     .apply-steps div {
+      background-color: var(--light);
+      padding: var(--space-2);
+      border: 1px solid var(--muted-shade);
+    }
+
+    .apply-steps h3 {
+      margin-bottom: var(--space-1);
+    }
+
+    .apply-info {
+      background-color: var(--muted);
+      padding: var(--space-2);
+    }
+
+    .apply-info p {
+      font-size: 0.95rem;
+    }
     
