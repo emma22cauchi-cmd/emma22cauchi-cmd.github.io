@@ -1,12 +1,12 @@
 
  /*------------------------- CSS VARIABLES  ---------------------------*/
 :root {
-    --primary: #1e1e6f;
-    --primary-tint: #3a3aa3;
-    --primary-shade: #14144a;
+    --primary: #0013bd;
+    --primary-tint: #5852f9;
+    --primary-shade: #030347;
   
-    --dark: #1c1c1c;
-    --light: #ffffff;
+    --dark: #212020;
+    --light: #f3e5bb;
   
     --muted: #e5e5e5;
     --muted-tint: #f2f2f2;
@@ -170,21 +170,24 @@
 
   /*-------------------------   COURSES PAGE ---------------------------*/
      
-    .courses-grid div {
-      box-shadow: 2px 4px rgba(0,0,0,0.1) ;
-     }
-
-     .courses-grid h3 {
-      margin-top: var(--space-1);
-    }
-
-    .courses-grid p {
-      font-size: 0.9rem;
-    }
+  .courses-grid div {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
   
-    .courses-grid div:hover {
-      background-color: var(--muted-tint);
-    }
+  /*-----titles----*/
+  .courses-grid h3 {
+    margin-top: var(--space-2);
+  }
+  
+  /* course text */
+  .courses-grid p {
+    font-size: 0.9rem;
+  }
+  
+  /* hover effect (simple) */
+  .courses-grid div:hover {
+    background-color: var(--muted-tint);
+  }
 
      /*-------------------------   APPLY PAGE ---------------------------*/
      .apply-steps div {
@@ -235,3 +238,94 @@
       object-fit: cover;
       display: block;
     }
+
+
+    /*--------------------------  ABOUT PAGE -------------------------------------*/
+
+   .site-header {
+  background-color: #0013bd;
+  padding: 1rem 0;
+}
+ 
+.page-banner h1 {
+  color: #aa9f62c5;          /* adding gold text */
+  font-size: 3.5rem;   
+  font-weight: 700;     /* bolder text to be able to show more on the background */
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav-bar a.active,
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+/* BANNER */
+.page-banner {
+  background-color: #b8baaa;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.page-banner h1 {
+  margin: 2;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+  padding: 3rem 1rem;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #030e6d;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+.about-content {
+  background-color: var(--muted);
+  padding: var(--space-3);
+}
+
+/* 4-image grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.about-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--space-2);
+}
+
+/* Text section */
+.about-text {
+  max-width: 800px;
+}
+
+
+  
