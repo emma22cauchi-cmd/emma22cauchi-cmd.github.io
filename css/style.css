@@ -157,14 +157,21 @@
   
        /*-------------------------   MOBILE  ---------------------------*/
 
-  @media (max-width: 600px) {
-    .grid-3col {
-      grid-template-columns: 1fr;
-    }
-  
-    .grid-2col {
-      grid-template-columns: 1fr;
-    }
+       @media (max-width: 768px) {
+
+        .grid-4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      
+        .page-banner h1 {
+          font-size: 2.2rem;
+          text-align: center;
+        }
+      
+        nav a {
+          display: block;
+          margin: 0.5rem 0;
+        }
   }
 
 
@@ -188,6 +195,7 @@
   .courses-grid div:hover {
     background-color: var(--muted-tint);
   }
+  
 
      /*-------------------------   APPLY PAGE ---------------------------*/
      .apply-steps div {
@@ -208,6 +216,7 @@
     .apply-info p {
       font-size: 0.95rem;
     }
+    
 
     /*-------------------------   HOME PAGE ---------------------------*/
     
@@ -238,6 +247,7 @@
       object-fit: cover;
       display: block;
     }
+   
 
 
     /*--------------------------  ABOUT PAGE -------------------------------------*/
@@ -307,7 +317,10 @@
   padding: var(--space-3);
 }
 
-/* 4-image grid */
+
+
+/* image grid */
+
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -316,16 +329,109 @@
 }
 
 .about-grid img {
-  width: 100%;
-  height: 200px;
+  width: 5%;
+  height: 5px;
   object-fit: cover;
   border-radius: var(--space-2);
 }
 
 /* Text section */
 .about-text {
-  max-width: 800px;
+  max-width: 900px;
 }
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay box */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: gold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Hover effect */
+.image-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.about-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay text */
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: gold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.about-card:hover .about-overlay {
+  opacity: 1;
+}
+
+.about-overlay h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
 
 
   
