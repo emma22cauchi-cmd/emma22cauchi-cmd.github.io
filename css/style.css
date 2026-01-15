@@ -216,6 +216,103 @@
     .apply-info p {
       font-size: 0.95rem;
     }
+
+    /* Cards */
+.apply-card {
+  background-color: var(--muted);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  min-height: 400px;
+}
+
+.apply-card img{
+  width: 100%;
+  height: 1rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-shadow: #5852f9;
+}
+
+/*---3 boxed grid----*/
+.apply-grid-3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/*---- 2 box grid----*/ 
+.apply-grid-2 {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+.apply-card {
+  background: var(--muted);
+  padding: var(--space-2);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* image container */
+.apply-image {
+  width: 100%;
+  height: 220px;          /* controls image height */
+  overflow: hidden;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* image itself */
+.apply-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* keeps image inside box */
+  display: block;
+}
+
+/* text */
+.apply-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.apply-card p {
+  font-size: 0.95rem;
+  color: var(--Dark);
+}
+
+/* smooth transition */
+.apply-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* lift card on hover */
+.apply-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* image hover effect */
+.apply-image img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* zoom + darken image */
+.apply-card:hover .apply-image img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+
+
+
+
+    
     
 
     /*-------------------------   HOME PAGE ---------------------------*/
@@ -437,6 +534,7 @@
   gap: 3rem;
   margin: 3rem auto;
 }
+
 .contact-section {
   margin-top: 4rem;
 }
