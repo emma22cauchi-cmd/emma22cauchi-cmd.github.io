@@ -430,6 +430,68 @@
   text-align: center;
 }
 
+/*--------------------------  CONTACT PAGE-------------------------------------*/
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem auto;
+}
+.contact-section {
+  margin-top: 4rem;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+}
+
+.contact-form p{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 200px;
+  resize: horizontal;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  width: fit-content;
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--muted);
+  border-radius: 1rem;
+}
+
+.faq-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.faq-section p {
+  margin-bottom: 1.5rem;
+}
+
+
 
 
 
