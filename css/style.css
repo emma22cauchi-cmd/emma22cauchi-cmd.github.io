@@ -134,6 +134,11 @@
     background-color: var(--muted);
     margin-bottom: var(--space-1);
   }
+  /* Home banner */
+.home-banner {
+  background-image: url("../images/home-banner.jpg");
+}
+
   
 
     /*-------------------------   FORMS (CONTACT PAGE)---------------------------*/
@@ -195,8 +200,46 @@
   .courses-grid div:hover {
     background-color: var(--muted-tint);
   }
-  
+  /* ===== Page Banner ===== */
+.page-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
 
+/* dark overlay */
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  color: #d4af37; /* gold */
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Courses banner image */
+.courses-banner {
+  background-image: url("../images/courses-banner.jpg");
+}
+  
      /*-------------------------   APPLY PAGE ---------------------------*/
      .apply-steps div {
       background-color: var(--light);
