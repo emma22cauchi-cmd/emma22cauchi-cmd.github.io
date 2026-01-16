@@ -244,6 +244,71 @@
 .courses-banner {
   background-image: url("../images/courses-banner.jpg");
 }
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem auto;
+}
+.course-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+}
+
+/* Image area */
+.course-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text */
+.course-card h3 {
+  margin-top: 1rem;
+  color: #d4af37; /* gold */
+}
+
+.course-card p {
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.arts-img {
+  background-image: url("../Media.png");
+}
+
+.science-img {
+  background-image: url("../images/science.jpg");
+}
+
+.business-img {
+  background-image: url("../images/business.jpg");
+}
+
+.engineering-img {
+  background-image: url("../images/engineering.jpg");
+}
+
+.community-img {
+  background-image: url("../images/community.jpg");
+}
+
+.ict-img {
+  background-image: url("../images/ict.jpg");
+}
+
   
      /*-------------------------   APPLY PAGE ---------------------------*/
      .apply-steps div {
