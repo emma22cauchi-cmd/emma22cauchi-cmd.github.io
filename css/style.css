@@ -308,7 +308,22 @@
 .ict-img {
   background-image: url("../images/ict.jpg");
 }
+@media (max-width: 768px) {
 
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-banner h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
   
      /*-------------------------   APPLY PAGE ---------------------------*/
      .apply-steps div {
@@ -421,6 +436,22 @@ margin-bottom: 3rem;
   filter: brightness(0.8);
 }
 
+@media (max-width: 768px) {
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-banner h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
     
 
     /*-------------------------   HOME PAGE ---------------------------*/
@@ -456,6 +487,23 @@ margin-bottom: 3rem;
       background-image: url("../Mcast-main.jpg");
     }
 
+    @media (max-width: 768px) {
+
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+      .page-banner h1 {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+    
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+ 
 
 
 
@@ -707,6 +755,12 @@ margin-bottom: 3rem;
 .about-overlay h3 {
   font-size: 1.5rem;
   text-align: center;
+}
+/* Logo */
+.logo img {
+  height: 45px;      /* controls logo size */
+  width: auto;
+  display: block;
 }
 
 /*--------------------------  CONTACT PAGE-------------------------------------*/
