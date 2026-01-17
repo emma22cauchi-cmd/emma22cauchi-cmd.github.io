@@ -381,6 +381,36 @@
 }
   
      /*-------------------------   APPLY PAGE ---------------------------*/
+     
+     .site-header {
+  background-color: #0013bd;
+  padding: 1rem 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+
+.nav-bar a.active,
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+    
+     
      .apply-steps div {
       background-color: var(--light);
       padding: var(--space-2);
