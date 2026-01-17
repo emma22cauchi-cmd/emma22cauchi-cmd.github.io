@@ -176,6 +176,12 @@
 .home-banner {
   background-image: url("../Mcast-main.jpg");
 }
+/* Logo */
+.logo img {
+  height: 45px;      /* controls logo size */
+  width: auto;
+  display: block;
+}
 
   
 
@@ -242,8 +248,9 @@
 
 /* Courses banner image */
 .courses-banner {
-  background-image: url("../images/courses-banner.jpg");
+  background-image: url("../ict.png");
 }
+
 
 .courses-grid {
   display: grid;
@@ -290,23 +297,23 @@
 }
 
 .science-img {
-  background-image: url("../images/science.jpg");
+  background-image: url("../science.png");
 }
 
 .business-img {
-  background-image: url("../images/business.jpg");
+  background-image: url("../buisness.png");
 }
 
 .engineering-img {
-  background-image: url("../images/engineering.jpg");
+  background-image: url("../engeneering.png");
 }
 
 .community-img {
-  background-image: url("../images/community.jpg");
+  background-image: url("../community.png");
 }
 
 .ict-img {
-  background-image: url("../images/ict.jpg");
+  background-image: url("../ict.png");
 }
 @media (max-width: 768px) {
 
@@ -323,6 +330,32 @@
     display: block;
     margin: 0.5rem 0;
   }
+}
+/* Course buttons */
+.course-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--primary);
+  color: var(--light);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.course-btn:hover {
+  background-color: var(--primary-tint);
+  transform: translateY(-2px);
+}
+.course-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card .course-btn {
+  margin-top: auto;
 }
   
      /*-------------------------   APPLY PAGE ---------------------------*/
@@ -451,6 +484,12 @@ margin-bottom: 3rem;
     display: block;
     margin: 0.5rem 0;
   }
+}
+/* Logo */
+.logo img {
+  height: 45px;      /* controls logo size */
+  width: auto;
+  display: block;
 }
     
 
