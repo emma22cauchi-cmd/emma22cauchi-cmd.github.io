@@ -145,6 +145,27 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
+  /* ===== PAGE-SPECIFIC BANNERS ===== */
+.home-banner {
+  background-image: url("../Mcast-main.jpg");
+}
+
+.courses-banner {
+  background-image: url("../banner.png");
+}
+
+.about-banner {
+  background-image: url("../about-us.jpg");
+}
+
+.apply-banner {
+  background-image: url("../Appl-p.jpg");
+}
+
+.contact-banner {
+  background-image: url("../contact-us.jpeg");
+}
+
    /*------------------------- HOME PAGE ---------------------------*/
 
   .p-1 { padding: var(--space-1); }
@@ -248,7 +269,7 @@
 
 /* Courses banner image */
 .courses-banner {
-  background-image: url("../ict.png");
+  background-image: url("../banner.png");
 }
 
 
@@ -325,6 +346,7 @@
     font-size: 2.2rem;
     text-align: center;
   }
+ 
 
   nav a {
     display: block;
@@ -363,6 +385,9 @@
       background-color: var(--light);
       padding: var(--space-2);
       border: 1px solid var(--muted-shade);
+    }
+    .home-banner {
+      background-image: url("../Appl-p.jpg");
     }
 
     .apply-steps h3 {
@@ -468,6 +493,8 @@ margin-bottom: 3rem;
   transform: scale(1.1);
   filter: brightness(0.8);
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -595,30 +622,6 @@ margin-bottom: 3rem;
   font-size: 0.95rem;
 }
 
-/* ===== PAGE-SPECIFIC BANNERS ===== */
-.home-banner {
-  background-image: url("../Mcast-main.jpg");
-}
-
-.courses-banner {
-  background-image: url("../images/courses-banner.jpg");
-}
-
-.about-banner {
-  background-image: url("../images/about-banner.jpg");
-}
-
-.apply-banner {
-  background-image: url("../images/apply-banner.jpg");
-}
-
-.contact-banner {
-  background-image: url("../images/contact-banner.jpg");
-}
-    
-
-
-    
 
 
     /*--------------------------  ABOUT PAGE -------------------------------------*/
@@ -649,17 +652,51 @@ margin-bottom: 3rem;
   color: white;
   font-weight: bold;
 }
+.home-banner {
+  background-image: url("../about-us.jpg");
+}
+
 
 /* BANNER */
+/* ===== PAGE BANNER (ALL PAGES) ===== */
 .page-banner {
-  background-color: #b8baaa;
-  padding: 3rem 2rem;
+  height: 80vh;              /* big banner */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
 }
 
-.page-banner h1 {
-  margin: 2;
+/* Dark overlay */
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
+
+/* Banner text */
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  color: #d4af37; /* gold */
+}
+
+.banner-content p {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.home-banner {
+  background-image: url("../Mcast-main.jpg");
+}
+
 
 /* ABOUT CONTENT */
 .about-content {
@@ -845,6 +882,9 @@ margin-bottom: 1rem;
   margin-top: 1.5rem;
   width: fit-content;
 }
+.home-banner {
+  background-image: url("../Appl-p.jpg");
+}
 
 /* FAQ SECTION */
 
@@ -864,25 +904,7 @@ margin-bottom: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.home-banner {
-  background-image: url("../Mcast-main.jpg");
-}
 
-.courses-banner {
-  background-image: url("../images/courses-banner.jpg");
-}
-
-.about-banner {
-  background-image: url("../images/about-banner.jpg");
-}
-
-.apply-banner {
-  background-image: url("../images/apply-banner.jpg");
-}
-
-.contact-banner {
-  background-image: url("../images/contact-banner.jpg");
-}
 
 
 
