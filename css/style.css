@@ -381,10 +381,11 @@
 }
   
      /*-------------------------   APPLY PAGE ---------------------------*/
-     
+    
      .site-header {
-  background-color: #0013bd;
-  padding: 1rem 0;
+      height: 80px;              /* adjust this number if needed */
+      background-color: #0013bd;
+      padding: 1rem 0;
 }
 
 .nav-bar {
